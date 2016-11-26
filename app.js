@@ -1,9 +1,10 @@
 (function () {
 	'use strict';
 
+	//Angular module declared
 	angular.module('LunchCheck', []).controller('LunchCheckController', LunchCheckController);
 
-	LunchCheckController.$inject = ['$scope'];
+	LunchCheckController.$inject = ['$scope']; //injecting $scope into the controller 
 
 	function LunchCheckController($scope) {
 		$scope.lunchItems = "";
